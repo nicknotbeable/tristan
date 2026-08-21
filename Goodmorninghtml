@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Good morning</title>
+</head>
+<body>
+    <h1>Good Morning Sir,</h1>
+    <p>This is my My digital TimeCapsul</p>
+</body>
+<script>
+    window.addEventListener("load", function(){
+        document.body.classList.add("loaded");
+    });
+    setTimeout(function(){
+        window.location.href = "index.html";
+    }, 3000);
+</script>
+</html>
