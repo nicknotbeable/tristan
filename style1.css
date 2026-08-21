@@ -1,0 +1,44 @@
+body {
+   margin: 0;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: 'Segoe',Arial, sans-serif;
+   background: linear-gradient(135deg, #f9d976, #f39f86);
+   animation: fadeIn 2s ease-in forwards;
+}
+h1{
+    font-size: 3.5em;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    animation: textFade 2s ease-in forwards;
+}
+p {
+    font-size: 3.5em;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    animation: textFade 2s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes textFade {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
