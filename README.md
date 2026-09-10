@@ -1,1 +1,1 @@
-#this is a project for the wed prog
+#this is a project for the web prog
