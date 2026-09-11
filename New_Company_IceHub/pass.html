@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <title>Password Registration</title>
+        <link rel="stylesheet" href="pass.css" />
+       
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+
+        <!-- Bootstrap CSS v5.3.8 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous"
+        />
+    </head>
+    
+
+    <body>
+       
+       <main>
+  <div class="ice-box">
+    <form id="registerForm" onsubmit="event.preventDefault(); registerUser();">
+      <div class="mb-3">
+        <label for="regEmail" class="form-label fw-semibold">Email</label>
+        <input type="email" id="regEmail" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="regPassword" class="form-label fw-semibold">Password</label>
+        <input type="password" id="regPassword" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="regConfirm" class="form-label fw-semibold">Confirm Password</label>
+        <input type="password" id="regConfirm" class="form-control" required>
+      </div>
+      <button type="submit" class="btn btn-success w-100 fw-bold">Register</button>
+      <a href="Password.html">Already have an account? Sign In</a>
+    </form>
+  </div>
+</main>
+
+        <footer>
+            <p>&copy; 2026 IceHub. All rights reserved.</p>
+        </footer>
+        
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"
+        ></script>
+        <script src="pass.js"></script>
+    </body>
+</html>
